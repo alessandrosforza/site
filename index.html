@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Alessandro Sforza - Portfolio</title>
+<title>Alessandro Sforza</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,55 +11,25 @@
 <header class="header">
   <div class="logo">AS</div>
   <nav class="nav">
-    <a href="#about">Chi sono</a>
-    <a href="#projects">Progetti</a>
-    <a href="#contact">Contatti</a>
+    <a href="index.html" data-i18n="nav_home"></a>
+    <a href="about.html" data-i18n="nav_about"></a>
+    <a href="projects.html" data-i18n="nav_projects"></a>
+    <a href="cv.html">CV</a>
+    <a href="contact.html" data-i18n="nav_contact"></a>
+    <button id="langToggle">EN</button>
     <button id="themeToggle">🌙</button>
   </nav>
   <div class="hamburger" id="hamburger">&#9776;</div>
 </header>
 
 <section class="hero">
-  <h1>Salve! Sono Alessandro</h1>
-  <p>Studente di informatica e appassionato di progetti interattivi</p>
-  <a href="#projects" class="btn">Scopri i miei progetti</a>
+  <h1 data-i18n="hero_title"></h1>
+  <p data-i18n="hero_subtitle"></p>
+  <a href="projects.html" class="btn" data-i18n="hero_btn"></a>
 </section>
 
-<main>
-  <section id="about" class="section fade-in">
-    <h2>Chi sono</h2>
-    <p>Mi piace creare siti web moderni, interattivi e funzionali. Amo la programmazione e le sfide creative.</p>
-  </section>
-
-  <section id="projects" class="section fade-in">
-    <h2>Progetti</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Progetto 1</h3>
-        <p>Esperimenti di fisica e simulazioni.</p>
-      </div>
-      <div class="card">
-        <h3>Progetto 2</h3>
-        <p>Maths Challenge e giochi logici.</p>
-      </div>
-      <div class="card">
-        <h3>Progetto 3</h3>
-        <p>Portfolio interattivo con animazioni.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section fade-in">
-    <h2>Contatti</h2>
-    <button id="contactBtn">Mostra email</button>
-    <p id="email" class="hidden">alessandro@email.com</p>
-  </section>
-</main>
-
-<footer>
-  <p>© 2026 Alessandro Sforza</p>
-</footer>
-
 <script src="script.js"></script>
+<script src="lang.js"></script>
 </body>
 </html>
+
